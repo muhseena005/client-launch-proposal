@@ -389,56 +389,25 @@
       font-weight: 700;
     }
 
-    /* Next Step: Ultra-clean executive callout card */
+    /* Next Step: Clean, high-converting callout */
     .next-step-box {
-      margin-top: 36px;
-      padding: 32px 36px;
-      background: #0f172a;
-      border-radius: 18px;
-      box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.35);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      position: relative;
-      overflow: hidden;
+      margin-top: 32px;
+      padding: 24px 28px;
+      background: #eff6ff;
+      border-radius: 14px;
+      border: 1.5px solid #bfdbfe;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       gap: 16px;
     }
 
-    .next-step-box::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 250px;
-      height: 250px;
-      background: radial-gradient(circle, rgba(59, 130, 246, 0.25) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .next-step-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 14px;
-      background: rgba(59, 130, 246, 0.2);
-      border: 1px solid rgba(59, 130, 246, 0.4);
-      border-radius: 9999px;
-      font-size: 14px;
-      font-weight: 800;
-      color: #60a5fa;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-
-    .next-step-title {
-      font-size: 22px;
-      font-weight: 800;
-      color: #ffffff;
-      line-height: 1.35;
+    .next-step-box p {
+      font-size: 19.5px;
+      font-weight: 700;
+      color: #1e3a8a;
       margin-bottom: 0;
-      position: relative;
-      z-index: 1;
+      line-height: 1.5;
     }
 
     .reply-btn {
@@ -446,23 +415,22 @@
       align-items: center;
       justify-content: center;
       gap: 10px;
-      margin-top: 8px;
-      background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+      background-color: #2563eb;
       color: #ffffff;
       font-size: 18px;
-      font-weight: 800;
-      padding: 16px 36px;
-      border-radius: 12px;
+      font-weight: 700;
+      padding: 14px 28px;
+      border-radius: 10px;
       text-decoration: none;
       transition: all 0.2s ease;
-      box-shadow: 0 8px 24px -2px rgba(37, 99, 235, 0.45);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      position: relative;
-      z-index: 1;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
     }
 
     .reply-btn:hover {
-      background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+      background-color: #1d4ed8;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
+    }
       transform: translateY(-2px);
       box-shadow: 0 12px 30px -2px rgba(37, 99, 235, 0.6);
     }
@@ -696,7 +664,7 @@
       <div class="faq-block">
         <div class="faq-q">"Three hundred pounds is a lot of money"</div>
         <p class="faq-a">If you're thinking £300 is a lot of money, I completely get it—especially if you've wasted money on marketing before.</p>
-        <p class="faq-a">The way to look at it is this: for most trades, one single extra job pays for the entire month—and our system is built to bring you 8 to 15+ of them. Plus, with our 30-day guarantee, if it doesn't pay for itself and make you extra profit, you don't pay anyway.</p>
+        <p class="faq-a">The way to look at it is this: for most trades, one single extra job pays for the entire month—and our system is built to bring you 6 to 15+ of them. Plus, with our 30-day guarantee, if it doesn't pay for itself and make you extra profit, you don't pay anyway.</p>
       </div>
     </section>
 
@@ -721,13 +689,9 @@
       </div>
 
       <div class="next-step-box">
-        <div class="next-step-badge">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-          Action Required Before Call
-        </div>
-        <div class="next-step-title">Reply to my message with how many calls a week you roughly miss</div>
+        <p><strong>Next Step:</strong> Reply to my message with how many calls a week you roughly miss</p>
         <a href="https://wa.me/447471752067?text=Hi%20Muhseen,%20I%20saw%20the%20breakdown.%20We%20roughly%20miss..." class="reply-btn" target="_blank" rel="noopener">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
           Reply on WhatsApp
         </a>
       </div>
