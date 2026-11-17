@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>How Our System Pays For Itself & Makes You Extra Profit In 30 Days Or You Don't Pay</title>
   
-  <!-- Nunito font for clean, friendly, professional readability -->
+  <!-- Nunito font + Plus Jakarta Sans for accents / callouts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
   
   <style>
     :root {
@@ -389,47 +389,30 @@
       font-weight: 700;
     }
 
-    /* Next Step: Clean, high-converting callout */
-    .next-step-box {
-      margin-top: 32px;
-      padding: 24px 28px;
-      background: #eff6ff;
-      border-radius: 14px;
-      border: 1.5px solid #bfdbfe;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 16px;
+    /* Final slide Next Step line */
+    .next-step-prompt {
+      margin-top: 36px;
+      padding-top: 28px;
+      border-top: 1.5px dashed #cbd5e1;
     }
 
-    .next-step-box p {
-      font-size: 19.5px;
-      font-weight: 700;
+    .next-step-prompt strong {
+      display: block;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 26px;
+      font-weight: 800;
       color: #1e3a8a;
-      margin-bottom: 0;
-      line-height: 1.5;
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
     }
 
-    .reply-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      background-color: #2563eb;
-      color: #ffffff;
-      font-size: 18px;
+    .next-step-prompt span {
+      display: block;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 23px;
       font-weight: 700;
-      padding: 14px 28px;
-      border-radius: 10px;
-      text-decoration: none;
-      transition: all 0.2s ease;
-      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
-    }
-
-    .reply-btn:hover {
-      background-color: #1d4ed8;
-      transform: translateY(-1px);
-      box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
+      color: #0f172a;
+      line-height: 1.45;
     }
       transform: translateY(-2px);
       box-shadow: 0 12px 30px -2px rgba(37, 99, 235, 0.6);
@@ -688,12 +671,9 @@
         <span>Pays for itself and makes you extra profit, or you don't pay</span>
       </div>
 
-      <div class="next-step-box">
-        <p><strong>Next Step:</strong> Reply to my message with how many calls a week you roughly miss</p>
-        <a href="https://wa.me/447471752067?text=Hi%20Muhseen,%20I%20saw%20the%20breakdown.%20We%20roughly%20miss..." class="reply-btn" target="_blank" rel="noopener">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-          Reply on WhatsApp
-        </a>
+      <div class="next-step-prompt">
+        <strong>Next Step:</strong>
+        <span>Reply to my message with how many calls a week you roughly miss</span>
       </div>
     </section>
 
