@@ -41,25 +41,25 @@
       overflow-x: hidden;
     }
 
-    /* Ambient Background Pattern & Lighting Orbs */
+    /* Ambient Background Pattern & Lighting Orbs: Richer & More Defined */
     .bg-pattern {
       position: fixed;
       inset: 0;
       background-image: 
-        radial-gradient(circle at 1px 1px, rgba(148, 163, 184, 0.22) 1px, transparent 0);
-      background-size: 32px 32px;
+        radial-gradient(circle at 1.5px 1.5px, rgba(99, 102, 241, 0.22) 1.5px, transparent 0);
+      background-size: 28px 28px;
       pointer-events: none;
       z-index: 0;
     }
 
     .bg-glow-1 {
       position: fixed;
-      top: -150px;
+      top: -120px;
       left: 50%;
       transform: translateX(-50%);
-      width: 800px;
-      height: 600px;
-      background: radial-gradient(circle, rgba(99, 102, 241, 0.18) 0%, rgba(59, 130, 246, 0.12) 40%, transparent 70%);
+      width: 900px;
+      height: 650px;
+      background: radial-gradient(circle, rgba(79, 70, 229, 0.22) 0%, rgba(59, 130, 246, 0.16) 45%, transparent 70%);
       filter: blur(80px);
       pointer-events: none;
       z-index: 0;
@@ -67,24 +67,24 @@
 
     .bg-glow-2 {
       position: fixed;
-      top: 40%;
-      left: -200px;
-      width: 600px;
-      height: 600px;
-      background: radial-gradient(circle, rgba(56, 189, 248, 0.14) 0%, rgba(99, 102, 241, 0.08) 50%, transparent 70%);
-      filter: blur(90px);
+      top: 35%;
+      left: -180px;
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(circle, rgba(14, 165, 233, 0.20) 0%, rgba(99, 102, 241, 0.12) 50%, transparent 70%);
+      filter: blur(85px);
       pointer-events: none;
       z-index: 0;
     }
 
     .bg-glow-3 {
       position: fixed;
-      bottom: -150px;
-      right: -150px;
-      width: 650px;
-      height: 650px;
-      background: radial-gradient(circle, rgba(129, 140, 248, 0.16) 0%, rgba(59, 130, 246, 0.10) 45%, transparent 70%);
-      filter: blur(90px);
+      bottom: -100px;
+      right: -120px;
+      width: 750px;
+      height: 750px;
+      background: radial-gradient(circle, rgba(129, 140, 248, 0.22) 0%, rgba(59, 130, 246, 0.14) 45%, transparent 70%);
+      filter: blur(85px);
       pointer-events: none;
       z-index: 0;
     }
@@ -96,16 +96,16 @@
       margin: 0 auto;
     }
 
-    /* Document Slide Cards: Crisp Glassmorphism, refined elevation */
+    /* Document Slide Cards: Crisp Glassmorphism with slight border glow */
     .gamma-card {
-      background: var(--card-bg);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border: 1px solid var(--border-color);
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(203, 213, 225, 0.8);
       border-radius: 20px;
       padding: 52px 56px;
       margin-bottom: 34px;
-      box-shadow: 0 10px 30px -4px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
+      box-shadow: 0 12px 35px -4px rgba(15, 23, 42, 0.08), 0 4px 10px -2px rgba(15, 23, 42, 0.04);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
@@ -116,14 +116,31 @@
       }
     }
 
-    /* Main Headline: Bold & Crisp */
+    /* Main Headline: Bold, Crisp, with Highlighter & Underline Accents */
     h1 {
       font-size: clamp(38px, 5.2vw, 56px);
-      font-weight: 700;
-      line-height: 1.2;
+      font-weight: 800;
+      line-height: 1.22;
       letter-spacing: -0.02em;
       color: #0f172a;
       margin-bottom: 22px;
+    }
+
+    /* Highlight badge style (Gamma yellow/indigo marker effect) */
+    .hl-badge {
+      display: inline-block;
+      background: linear-gradient(120deg, rgba(254, 240, 138, 0.85) 0%, rgba(253, 224, 71, 0.85) 100%);
+      padding: 2px 10px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(234, 179, 8, 0.2);
+      color: #0f172a;
+    }
+
+    .hl-underline {
+      text-decoration: underline;
+      text-decoration-color: #2563eb;
+      text-decoration-thickness: 4px;
+      text-underline-offset: 6px;
     }
 
     .title-accent-line {
@@ -420,7 +437,7 @@
 
     <!-- Card 1: Main Title & Hook -->
     <section class="gamma-card">
-      <h1>How Our System Pays For Itself & Makes You Extra Profit In 30 Days Or You Don't Pay.</h1>
+      <h1>How Our System <span class="hl-badge">Pays For Itself</span> &amp; Makes You Extra Profit In 30 Days Or <span class="hl-underline">You Don't Pay</span>.</h1>
       <div class="title-accent-line"></div>
 
       <p>In the next 4 minutes, I'll show you how our system pays for itself in 30 days &amp; makes you extra profit or you don't pay.</p>
