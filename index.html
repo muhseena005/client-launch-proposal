@@ -217,33 +217,37 @@
 
     .bullet-list {
       list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
     }
 
     .bullet-list li {
-      position: relative;
-      padding-left: 28px;
-      font-size: 18.5px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 18px;
       color: #1f2937;
-      margin-bottom: 14px;
       font-weight: 700;
-      line-height: 1.6;
+      line-height: 1.5;
     }
 
-    .bullet-list li:last-child {
-      margin-bottom: 0;
+    .bullet-icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      margin-top: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    .bullet-list li::before {
-      content: "•";
-      position: absolute;
-      left: 6px;
-      top: -1px;
-      font-size: 26px;
-      color: #94a3b8;
+    .bullet-icon.cross svg {
+      stroke: #ef4444;
     }
 
-    .comp-block.new .bullet-list li::before {
-      color: #2563eb;
+    .bullet-icon.check svg {
+      stroke: #2563eb;
     }
 
     .comp-block.new .bullet-list li {
@@ -499,20 +503,80 @@
         <div class="comp-block old">
           <h3>Traditional agency</h3>
           <ul class="bullet-list">
-            <li>Charge £2,000–£5,000 upfront for a website + £1,000+/month retainers</li>
-            <li>Lock you into 3–12 month contracts with zero guarantee</li>
-            <li>Force you to pay for expensive ads before fixing the basics</li>
-            <li>Send confusing reports about "clicks" instead of actual booked jobs</li>
+            <li>
+              <span class="bullet-icon cross">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </span>
+              <span>Force you to pay for expensive ads before fixing the basics</span>
+            </li>
+            <li>
+              <span class="bullet-icon cross">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </span>
+              <span>Charge £2,000–£5,000 upfront for a website + £1,000+/month retainers</span>
+            </li>
+            <li>
+              <span class="bullet-icon cross">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </span>
+              <span>Lock you into 3–12 month contracts with zero guarantee</span>
+            </li>
+            <li>
+              <span class="bullet-icon cross">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </span>
+              <span>Send confusing reports about "clicks" instead of actual booked jobs</span>
+            </li>
           </ul>
         </div>
 
         <div class="comp-block new">
           <h3>The New Way (Our System):</h3>
           <ul class="bullet-list">
-            <li>£0 upfront website build &amp; £0 ad spend required</li>
-            <li>Month-to-month—no long-term contracts</li>
-            <li>1/10 of what they charge &amp; it actually books you more jobs and make you money</li>
-            <li><strong>30-Day Guarantee:</strong> Pays for itself and makes you extra profit, or you don't pay</li>
+            <li>
+              <span class="bullet-icon check">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <span>1/10 of what they charge &amp; it actually books you more jobs and make you money</span>
+            </li>
+            <li>
+              <span class="bullet-icon check">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <span>£0 upfront website build &amp; £0 ad spend required</span>
+            </li>
+            <li>
+              <span class="bullet-icon check">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <span>Month-to-month—no long-term contracts</span>
+            </li>
+            <li>
+              <span class="bullet-icon check">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <span><strong>30-Day Guarantee:</strong> Pays for itself and makes you extra profit, or you don't pay</span>
+            </li>
           </ul>
         </div>
       </div>
