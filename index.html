@@ -12,11 +12,11 @@
   
   <style>
     :root {
-      --bg-page: #fbfbfd;
-      --card-bg: #ffffff;
-      --border-color: #e5e7eb;
-      --text-main: #111827;
-      --text-muted: #374151;
+      --bg-page: #f4f6fa;
+      --card-bg: rgba(255, 255, 255, 0.92);
+      --border-color: rgba(226, 232, 240, 0.9);
+      --text-main: #0f172a;
+      --text-muted: #1e293b;
       --accent-blue: #2563eb;
       --accent-dark: #1e3a8a;
       --font-family: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -33,38 +33,93 @@
       font-family: var(--font-family);
       color: var(--text-main);
       line-height: 1.75;
-      padding: 44px 16px 88px 16px;
+      padding: 50px 16px 100px 16px;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Ambient Background Pattern & Lighting Orbs */
+    .bg-pattern {
+      position: fixed;
+      inset: 0;
+      background-image: 
+        radial-gradient(circle at 1px 1px, rgba(148, 163, 184, 0.22) 1px, transparent 0);
+      background-size: 32px 32px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .bg-glow-1 {
+      position: fixed;
+      top: -150px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.18) 0%, rgba(59, 130, 246, 0.12) 40%, transparent 70%);
+      filter: blur(80px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .bg-glow-2 {
+      position: fixed;
+      top: 40%;
+      left: -200px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(56, 189, 248, 0.14) 0%, rgba(99, 102, 241, 0.08) 50%, transparent 70%);
+      filter: blur(90px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .bg-glow-3 {
+      position: fixed;
+      bottom: -150px;
+      right: -150px;
+      width: 650px;
+      height: 650px;
+      background: radial-gradient(circle, rgba(129, 140, 248, 0.16) 0%, rgba(59, 130, 246, 0.10) 45%, transparent 70%);
+      filter: blur(90px);
+      pointer-events: none;
+      z-index: 0;
     }
 
     .container {
+      position: relative;
+      z-index: 1;
       max-width: 860px;
       margin: 0 auto;
     }
 
-    /* Document Slide Cards (Gamma style) */
+    /* Document Slide Cards: Crisp Glassmorphism, refined elevation */
     .gamma-card {
       background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
       border: 1px solid var(--border-color);
-      border-radius: 16px;
-      padding: 50px 54px;
-      margin-bottom: 32px;
-      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04);
-      transition: box-shadow 0.2s ease;
+      border-radius: 20px;
+      padding: 52px 56px;
+      margin-bottom: 34px;
+      box-shadow: 0 10px 30px -4px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     @media (max-width: 640px) {
       .gamma-card {
         padding: 30px 22px;
-        border-radius: 12px;
+        border-radius: 14px;
       }
     }
 
-    /* Main Headline: Bigger, neat, bold without being blocky/fat */
+    /* Main Headline: Bold & Crisp */
     h1 {
       font-size: clamp(38px, 5.2vw, 56px);
-      font-weight: 700; /* Clean, neat bold rather than heavy 900 */
+      font-weight: 700;
       line-height: 1.2;
       letter-spacing: -0.02em;
       color: #0f172a;
@@ -74,7 +129,7 @@
     .title-accent-line {
       width: 140px;
       height: 4px;
-      background-color: #4f46e5;
+      background: linear-gradient(90deg, #4f46e5 0%, #3b82f6 100%);
       border-radius: 2px;
       margin-bottom: 32px;
     }
@@ -89,16 +144,16 @@
     }
 
     h3 {
-      font-size: 25px;
+      font-size: 24px;
       font-weight: 700;
       color: #0f172a;
       margin-bottom: 14px;
     }
 
-    /* All normal body text: Nunito, clean and balanced */
+    /* Body Text: Nunito Bold, readable and sharp */
     p {
       font-size: 19px;
-      color: #1f2937;
+      color: var(--text-muted);
       margin-bottom: 22px;
       font-weight: 700;
       line-height: 1.7;
@@ -118,21 +173,30 @@
     }
 
     .comp-block {
-      padding: 6px 0;
+      padding: 20px 24px;
+      border-radius: 14px;
+      background: rgba(248, 250, 252, 0.85);
+      border: 1px solid #e2e8f0;
+    }
+
+    .comp-block.new {
+      background: linear-gradient(180deg, rgba(239, 246, 255, 0.9) 0%, rgba(240, 249, 255, 0.8) 100%);
+      border: 1.5px solid #bfdbfe;
+      box-shadow: 0 4px 14px -2px rgba(37, 99, 235, 0.08);
     }
 
     .comp-block h3 {
-      font-size: 23px;
+      font-size: 22px;
       font-weight: 700;
       margin-bottom: 14px;
     }
 
     .comp-block.old h3 {
-      color: #1f2937;
+      color: #475569;
     }
 
     .comp-block.new h3 {
-      color: #000000;
+      color: #1e40af;
     }
 
     .bullet-list {
@@ -141,12 +205,16 @@
 
     .bullet-list li {
       position: relative;
-      padding-left: 26px;
+      padding-left: 28px;
       font-size: 18.5px;
       color: #1f2937;
       margin-bottom: 14px;
       font-weight: 700;
       line-height: 1.6;
+    }
+
+    .bullet-list li:last-child {
+      margin-bottom: 0;
     }
 
     .bullet-list li::before {
@@ -155,7 +223,7 @@
       left: 6px;
       top: -1px;
       font-size: 26px;
-      color: #9ca3af;
+      color: #94a3b8;
     }
 
     .comp-block.new .bullet-list li::before {
@@ -164,7 +232,7 @@
 
     .comp-block.new .bullet-list li {
       color: #0f172a;
-      font-weight: 600;
+      font-weight: 700;
     }
 
     /* Pillars (The 4 things we set up) */
@@ -172,13 +240,16 @@
       display: flex;
       align-items: flex-start;
       gap: 34px;
-      padding: 28px 0;
-      border-bottom: 1px solid #f3f4f6;
+      padding: 30px 24px;
+      border-radius: 16px;
+      background: #ffffff;
+      border: 1px solid #edf2f7;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px -2px rgba(15, 23, 42, 0.03);
     }
 
     .pillar-item:last-child {
-      border-bottom: none;
-      padding-bottom: 8px;
+      margin-bottom: 0;
     }
 
     @media (max-width: 640px) {
@@ -187,22 +258,32 @@
         align-items: center;
         text-align: center;
         gap: 18px;
+        padding: 22px 18px;
       }
     }
 
     .pillar-icon-box {
       flex-shrink: 0;
-      width: 120px;
+      width: 88px;
+      height: 88px;
+      border-radius: 16px;
+      background: #f1f5f9;
       display: flex;
       justify-content: center;
       align-items: center;
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
     }
 
-    .pillar-icon-box img,
-    .pillar-icon-box svg {
-      max-width: 100px;
-      max-height: 100px;
-      object-fit: contain;
+    .pillar-icon-box.icon-blue {
+      background: #eff6ff;
+    }
+
+    .pillar-icon-box.icon-red {
+      background: #fef2f2;
+    }
+
+    .pillar-icon-box.icon-green {
+      background: #f0fdf4;
     }
 
     .pillar-content {
@@ -210,8 +291,8 @@
     }
 
     .pillar-num-title {
-      font-size: 23px;
-      font-weight: 700;
+      font-size: 22px;
+      font-weight: 800;
       color: #1d4ed8;
       margin-bottom: 12px;
     }
@@ -220,7 +301,7 @@
       font-size: 18.5px;
       color: #1f2937;
       line-height: 1.7;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
       font-weight: 700;
     }
 
@@ -255,11 +336,11 @@
 
     /* Before Call / Final Offer Card */
     .cta-card {
-      background: #ffffff;
+      background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
       border: 2px solid #2563eb;
-      border-radius: 16px;
-      padding: 50px 54px;
-      box-shadow: 0 10px 30px -4px rgba(37, 99, 235, 0.08);
+      border-radius: 20px;
+      padding: 52px 56px;
+      box-shadow: 0 16px 40px -8px rgba(37, 99, 235, 0.16);
     }
 
     @media (max-width: 640px) {
@@ -278,7 +359,7 @@
     }
 
     .offer-line strong {
-      font-weight: 700;
+      font-weight: 800;
       font-size: 21px;
       color: #000000;
     }
@@ -289,16 +370,16 @@
     }
 
     .next-step-box {
-      margin-top: 30px;
-      padding: 24px 28px;
+      margin-top: 32px;
+      padding: 26px 30px;
       background: #eff6ff;
-      border-radius: 12px;
-      border: 1px solid #bfdbfe;
+      border-radius: 14px;
+      border: 1.5px solid #bfdbfe;
     }
 
     .next-step-box p {
       font-size: 19.5px;
-      font-weight: 700;
+      font-weight: 800;
       color: #1e40af;
       margin-bottom: 0;
     }
@@ -314,19 +395,26 @@
       font-size: 19px;
       font-weight: 700;
       padding: 16px 32px;
-      border-radius: 10px;
+      border-radius: 12px;
       text-decoration: none;
-      transition: background-color 0.2s ease, transform 0.1s ease;
-      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+      transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+      box-shadow: 0 6px 18px rgba(37, 99, 235, 0.28);
     }
 
     .reply-btn:hover {
       background-color: #1d4ed8;
-      transform: translateY(-1px);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(37, 99, 235, 0.35);
     }
   </style>
 </head>
 <body>
+
+  <!-- Ambient Design Elements in the Background -->
+  <div class="bg-pattern"></div>
+  <div class="bg-glow-1"></div>
+  <div class="bg-glow-2"></div>
+  <div class="bg-glow-3"></div>
 
   <div class="container">
 
@@ -377,13 +465,13 @@
 
     <!-- Card 3: How It Works (The 4 Things We Set Up For You) -->
     <section class="gamma-card">
-      <h2>How It Works<br><span style="font-weight: 600; color: #4b5563; font-size: 0.85em;">(The 4 Things We Set Up For You)</span></h2>
+      <h2>How It Works<br><span style="font-weight: 600; color: #475569; font-size: 0.85em;">(The 4 Things We Set Up For You)</span></h2>
       <div class="title-accent-line"></div>
 
       <!-- Pillar 1 -->
       <div class="pillar-item">
-        <div class="pillar-icon-box">
-          <svg width="68" height="68" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <div class="pillar-icon-box icon-blue">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <rect x="5" y="2" width="14" height="20" rx="3" ry="3"></rect>
             <line x1="12" y1="18" x2="12" y2="18.01"></line>
             <path d="M8 6h8"></path>
@@ -398,8 +486,8 @@
 
       <!-- Pillar 2 -->
       <div class="pillar-item">
-        <div class="pillar-icon-box">
-          <svg width="68" height="68" viewBox="0 0 24 24" fill="none" stroke="#ea4335" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <div class="pillar-icon-box icon-red">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#ea4335" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"></path>
             <circle cx="12" cy="9" r="2.5" fill="#ea4335"></circle>
           </svg>
@@ -413,8 +501,8 @@
 
       <!-- Pillar 3 -->
       <div class="pillar-item">
-        <div class="pillar-icon-box">
-          <svg width="68" height="68" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <div class="pillar-icon-box icon-blue">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
             <line x1="8" y1="21" x2="16" y2="21"></line>
             <line x1="12" y1="17" x2="12" y2="21"></line>
@@ -429,8 +517,8 @@
 
       <!-- Pillar 4 -->
       <div class="pillar-item">
-        <div class="pillar-icon-box">
-          <svg width="68" height="68" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <div class="pillar-icon-box icon-green">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
             <circle cx="9" cy="7" r="4"></circle>
             <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
@@ -457,7 +545,7 @@
         <p class="faq-a">We aren't an ad agency, and there are no contracts. It's just a simple automated system that catches the jobs you're already missing—bringing most clients 6 to 15 extra jobs a month without spending a penny on ads.</p>
       </div>
 
-      <hr style="border: 0; border-top: 1px solid #f3f4f6; margin: 28px 0;">
+      <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 28px 0;">
 
       <!-- FAQ 2 -->
       <div class="faq-block">
@@ -466,7 +554,7 @@
         <p class="faq-a">The only problem is you can't turn it on like a tap, so it's always feast or famine—and you're still missing out on all the people searching Google Maps who don't have a mate to ask. Our system keeps your word-of-mouth business running while bringing in steady Google and repeat jobs during the quiet weeks.</p>
       </div>
 
-      <hr style="border: 0; border-top: 1px solid #f3f4f6; margin: 28px 0;">
+      <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 28px 0;">
 
       <!-- FAQ 3 -->
       <div class="faq-block">
@@ -475,7 +563,7 @@
         <p class="faq-a">Most websites just sit there like an online brochure and don't actually catch missed calls or get you Google reviews. We simply plug our automation straight into your existing site so it starts converting the visitors you're already getting.</p>
       </div>
 
-      <hr style="border: 0; border-top: 1px solid #f3f4f6; margin: 28px 0;">
+      <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 28px 0;">
 
       <!-- FAQ 4 -->
       <div class="faq-block">
@@ -483,7 +571,7 @@
         <p class="faq-a">If you're not good with technology, don't worry—we set up and run everything for you.</p>
       </div>
 
-      <hr style="border: 0; border-top: 1px solid #f3f4f6; margin: 28px 0;">
+      <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 28px 0;">
 
       <!-- FAQ 5 -->
       <div class="faq-block">
