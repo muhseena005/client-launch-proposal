@@ -354,13 +354,15 @@
       line-height: 1.7;
     }
 
-    /* Before Call / Final Offer Card */
+    /* Before Call / Final Offer Card - Clean, minimalist Gamma document style */
     .cta-card {
-      background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
-      border: 2px solid #2563eb;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(203, 213, 225, 0.8);
       border-radius: 20px;
       padding: 52px 56px;
-      box-shadow: 0 16px 40px -8px rgba(37, 99, 235, 0.16);
+      box-shadow: 0 12px 35px -4px rgba(15, 23, 42, 0.08), 0 4px 10px -2px rgba(15, 23, 42, 0.04);
     }
 
     @media (max-width: 640px) {
@@ -369,88 +371,59 @@
       }
     }
 
-    .offer-line {
-      margin-bottom: 24px;
-      padding: 22px 26px;
-      background: #ffffff;
-      border-radius: 14px;
-      border: 1px solid #e2e8f0;
-      box-shadow: 0 4px 12px -2px rgba(15, 23, 42, 0.04);
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
+    .offer-group {
+      margin-bottom: 28px;
     }
 
-    .offer-line strong.offer-title {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 24px;
+    .offer-group:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .offer-title {
+      font-size: 22px;
       font-weight: 800;
-      color: #0f172a;
-      letter-spacing: -0.015em;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      color: #000000;
+      margin-bottom: 6px;
+      display: block;
     }
 
-    .offer-line strong.offer-title.accent {
-      color: #1e40af;
-    }
-
-    .offer-line .offer-body {
+    .offer-desc {
       font-size: 20px;
-      line-height: 1.6;
-      color: #334155;
+      line-height: 1.65;
+      color: #1e293b;
       font-weight: 600;
+      margin: 0;
     }
 
-    .offer-line .offer-body strong {
-      color: #0f172a;
-      font-weight: 800;
-    }
-
-    .offer-line .offer-badge-box {
-      margin-top: 6px;
-      padding: 12px 16px;
-      background: #f0fdf4;
-      border: 1px solid #bbf7d0;
-      border-radius: 10px;
-      font-size: 19px;
-      color: #166534;
-      font-weight: 700;
-      line-height: 1.5;
-    }
-
-    .offer-line .offer-badge-box strong {
-      color: #15803d;
+    .offer-desc strong {
+      color: #000000;
       font-weight: 800;
     }
 
     /* Final slide Next Step line */
     .next-step-prompt {
-      margin-top: 32px;
-      padding-top: 24px;
-      border-top: 1.5px dashed #cbd5e1;
+      margin-top: 36px;
+      padding-top: 26px;
+      border-top: 1px solid #e2e8f0;
     }
 
     .next-step-prompt strong {
       display: block;
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 30px;
+      font-size: 24px;
       font-weight: 800;
       font-style: italic;
       color: #1e3a8a;
       letter-spacing: -0.01em;
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
 
     .next-step-prompt span {
       display: block;
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 27px;
+      font-size: 22px;
       font-weight: 700;
       font-style: italic;
       color: #0f172a;
-      line-height: 1.45;
+      line-height: 1.5;
     }
   </style>
 </head>
@@ -691,22 +664,20 @@
       <h2>Before our call</h2>
       <div class="title-accent-line"></div>
 
-      <div class="offer-line">
+      <div class="offer-group">
         <strong class="offer-title">What You Get:</strong>
-        <span class="offer-body">We set up all 4 systems for you so you stop losing jobs when you miss calls, get more 5-star reviews on Google, and bring in more work.</span>
-        <div class="offer-badge-box">
-          <strong>Plus:</strong> A brand new website (which agencies usually charge £5,000 for) built for you completely free if you need one.
-        </div>
+        <p class="offer-desc">We set up all 4 systems for you so you stop losing jobs when you miss calls, get more 5-star reviews on Google, and bring in more work.</p>
+        <p class="offer-desc" style="margin-top: 10px;"><strong>Plus:</strong> A brand new website (which agencies usually charge £5,000 for) built for you completely free if you need one.</p>
       </div>
 
-      <div class="offer-line">
-        <strong class="offer-title accent">Your Investment:</strong>
-        <span class="offer-body"><strong>£300 a month.</strong> Month-to-month, cancel whenever you want, and you don't spend a penny on ads.</span>
+      <div class="offer-group">
+        <strong class="offer-title">Your Investment:</strong>
+        <p class="offer-desc"><strong>£300 a month.</strong> Month-to-month, cancel whenever you want, and you don't spend a penny on ads.</p>
       </div>
 
-      <div class="offer-line" style="border-left: 4px solid #16a34a;">
-        <strong class="offer-title" style="color: #15803d;">The 30-Day Guarantee:</strong>
-        <span class="offer-body">If it doesn't make you more money than it costs in your first 30 days, <strong>you don't pay</strong>.</span>
+      <div class="offer-group">
+        <strong class="offer-title">The 30-Day Guarantee:</strong>
+        <p class="offer-desc">If it doesn't make you more money than it costs in your first 30 days, <strong>you don't pay</strong>.</p>
       </div>
 
       <div class="next-step-prompt">
