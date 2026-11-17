@@ -372,11 +372,16 @@
     }
 
     .offer-group {
-      margin-bottom: 18px;
+      margin-bottom: 20px;
       padding: 22px 24px;
       background: rgba(248, 250, 252, 0.75);
       border: 1px solid #e2e8f0;
       border-radius: 12px;
+    }
+
+    .offer-group.guarantee-box {
+      border-left: 5px solid #2563eb;
+      background: linear-gradient(90deg, rgba(239, 246, 255, 0.6) 0%, rgba(248, 250, 252, 0.75) 100%);
     }
 
     .offer-group:last-of-type {
@@ -384,16 +389,20 @@
     }
 
     .offer-title {
-      font-size: 20px;
+      font-size: 24px;
       font-weight: 800;
       color: #0f172a;
-      margin-bottom: 8px;
-      display: block;
+      margin-bottom: 12px;
+      display: inline-block;
+      background: linear-gradient(120deg, rgba(254, 240, 138, 0.95) 0%, rgba(253, 224, 71, 0.95) 100%);
+      padding: 2px 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(234, 179, 8, 0.18);
     }
 
     .offer-desc {
-      font-size: 19px;
-      line-height: 1.6;
+      font-size: 19.5px;
+      line-height: 1.65;
       color: #334155;
       font-weight: 600;
       margin: 0;
@@ -679,7 +688,7 @@
         <p class="offer-desc"><strong>£300 a month.</strong> Month-to-month, cancel whenever you want, and you don't spend a penny on ads.</p>
       </div>
 
-      <div class="offer-group">
+      <div class="offer-group guarantee-box">
         <strong class="offer-title">The 30-Day Guarantee:</strong>
         <p class="offer-desc">If it doesn't make you more money than it costs in your first 30 days, <strong>you don't pay</strong>.</p>
       </div>
