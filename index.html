@@ -1,634 +1,565 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How Our System Pays For Itself & Makes You Extra Profit In 30 Days Or You Don't Pay</title>
+  
+  <!-- Nunito font matching Gamma -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-page: #fbfbfd;
+      --card-bg: #ffffff;
+      --border-color: #e5e7eb;
+      --text-main: #111827;
+      --text-muted: #4b5563;
+      --accent-blue: #3b82f6;
+      --accent-dark: #1e3a8a;
+      --font-family: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Marketing Proposal | Client Launch</title>
-<!-- Google Fonts: Nunito for all text -->
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<!-- Material Symbols -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind CSS -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "surface-container": "#e7eeff",
-                    "on-error": "#ffffff",
-                    "on-primary-container": "#848484",
-                    "surface": "#f9f9ff",
-                    "background": "#fbfbfd",
-                    "surface-bright": "#f9f9ff",
-                    "surface-container-high": "#dee8ff",
-                    "secondary-fixed": "#d5e3fc",
-                    "outline": "#7e7576",
-                    "on-secondary-container": "#57657a",
-                    "tertiary": "#000000",
-                    "error-container": "#ffdad6",
-                    "on-primary": "#ffffff",
-                    "surface-variant": "#d8e3fb",
-                    "on-primary-fixed-variant": "#474747",
-                    "primary-fixed": "#e2e2e2",
-                    "primary": "#000000",
-                    "outline-variant": "#cfc4c5",
-                    "surface-container-low": "#f0f3ff",
-                    "secondary-fixed-dim": "#b9c7df",
-                    "secondary": "#515f74",
-                    "on-surface-variant": "#4c4546",
-                    "on-secondary-fixed-variant": "#3a485b",
-                    "error": "#ba1a1a",
-                    "inverse-surface": "#263143",
-                    "surface-container-highest": "#d8e3fb",
-                    "on-tertiary": "#ffffff",
-                    "on-secondary-fixed": "#0d1c2e",
-                    "primary-container": "#1b1b1b",
-                    "on-tertiary-fixed": "#191c1e",
-                    "on-background": "#111c2d",
-                    "on-tertiary-fixed-variant": "#444749",
-                    "primary-fixed-dim": "#c6c6c6",
-                    "surface-container-lowest": "#ffffff",
-                    "on-tertiary-container": "#818486",
-                    "on-primary-fixed": "#1b1b1b",
-                    "inverse-on-surface": "#ecf1ff",
-                    "secondary-container": "#d5e3fc",
-                    "on-surface": "#111c2d",
-                    "tertiary-container": "#191c1e",
-                    "on-secondary": "#ffffff",
-                    "on-error-container": "#93000a",
-                    "surface-dim": "#cfdaf2",
-                    "tertiary-fixed-dim": "#c4c7c9",
-                    "inverse-primary": "#c6c6c6",
-                    "surface-tint": "#5e5e5e",
-                    "accent-gold": "#C5A059"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
-            },
-            "spacing": {
-                    "gutter": "32px",
-                    "section-padding": "160px",
-                    "container-max": "1120px",
-                    "unit": "8px",
-                    "margin-mobile": "24px"
-            },
-            "fontFamily": {
-                    "body-lg": ["Nunito", "sans-serif"],
-                    "label-sm": ["Nunito", "sans-serif"],
-                    "headline-sm": ["Nunito", "sans-serif"],
-                    "display": ["Nunito", "sans-serif"],
-                    "headline-lg-mobile": ["Nunito", "sans-serif"],
-                    "headline-lg": ["Nunito", "sans-serif"],
-                    "label-md": ["Nunito", "sans-serif"],
-                    "headline-md": ["Nunito", "sans-serif"],
-                    "body-md": ["Nunito", "sans-serif"]
-            },
-            "fontSize": {
-                    "body-lg": ["19px", {"lineHeight": "1.75", "fontWeight": "400"}],
-                    "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
-                    "headline-sm": ["26px", {"lineHeight": "1.4", "fontWeight": "700"}],
-                    "display": ["64px", {"lineHeight": "1.15", "letterSpacing": "-0.01em", "fontWeight": "800"}],
-                    "headline-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "800"}],
-                    "headline-lg": ["52px", {"lineHeight": "1.2", "fontWeight": "800"}],
-                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "700"}],
-                    "headline-md": ["34px", {"lineHeight": "1.3", "fontWeight": "800"}],
-                    "body-md": ["17px", {"lineHeight": "1.7", "fontWeight": "400"}]
-            }
-          },
-        },
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      font-family: var(--font-family);
+      color: var(--text-main);
+      line-height: 1.65;
+      padding: 40px 16px 80px 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    /* Document Slide Cards (Gamma style) */
+    .gamma-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 44px 48px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04);
+      transition: box-shadow 0.2s ease;
+    }
+
+    @media (max-width: 640px) {
+      .gamma-card {
+        padding: 28px 20px;
+        border-radius: 12px;
       }
-    </script>
-<style>
-        body {
-            background-color: #fbfbfd;
-            background-image: radial-gradient(circle at 50% 0%, rgba(226, 226, 226, 0.1) 0%, transparent 50%);
-            color: #111c2d;
-            -webkit-font-smoothing: antialiased;
-            font-family: 'Nunito', sans-serif;
-        }
-        h1, h2, h3, h4 {
-            font-family: 'Nunito', sans-serif;
-            font-weight: 800;
-        }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-            vertical-align: middle;
-        }
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: #f9f9ff; }
-        ::-webkit-scrollbar-thumb { background: #000000; }
-        
-        @media (max-width: 768px) {
-            .section-spacing { padding-top: 80px; padding-bottom: 80px; }
-        }
-        @media (min-width: 769px) {
-            .section-spacing { padding-top: 160px; padding-bottom: 160px; }
-        }
+    }
 
-        .content-card {
-            background: white;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            border-radius: 4px;
-        }
+    /* Typography */
+    h1 {
+      font-size: clamp(32px, 4.5vw, 46px);
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: #000000;
+      margin-bottom: 18px;
+    }
 
-        .step-number {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 36px;
-            height: 36px;
-            background-color: #000;
-            color: #fff;
-            font-weight: 800;
-            border-radius: 4px;
-            margin-right: 12px;
-            font-size: 18px;
-        }
+    .title-accent-line {
+      width: 140px;
+      height: 4px;
+      background-color: #4f46e5;
+      border-radius: 2px;
+      margin-bottom: 28px;
+    }
 
-        .section-divider {
-            width: 1px;
-            background: linear-gradient(to bottom, transparent, #00000020, transparent);
-            height: 100%;
-        }
-    </style>
+    h2 {
+      font-size: clamp(26px, 3.5vw, 34px);
+      font-weight: 800;
+      line-height: 1.25;
+      color: #000000;
+      margin-bottom: 20px;
+      letter-spacing: -0.01em;
+    }
+
+    h3 {
+      font-size: 22px;
+      font-weight: 800;
+      color: #000000;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 17.5px;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+      font-weight: 500;
+    }
+
+    p strong {
+      color: var(--text-main);
+      font-weight: 700;
+    }
+
+    /* Video Container */
+    .video-container {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #000000;
+      border-radius: 14px;
+      overflow: hidden;
+      margin: 24px 0 28px 0;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .video-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Comparison Box */
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+      margin-top: 10px;
+    }
+
+    .comp-block {
+      padding: 6px 0;
+    }
+
+    .comp-block h3 {
+      font-size: 21px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .comp-block.old h3 {
+      color: #1f2937;
+    }
+
+    .comp-block.new h3 {
+      color: #000000;
+    }
+
+    .bullet-list {
+      list-style: none;
+    }
+
+    .bullet-list li {
+      position: relative;
+      padding-left: 24px;
+      font-size: 17px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      font-weight: 500;
+      line-height: 1.55;
+    }
+
+    .bullet-list li::before {
+      content: "•";
+      position: absolute;
+      left: 6px;
+      top: -1px;
+      font-size: 22px;
+      color: #9ca3af;
+    }
+
+    .comp-block.new .bullet-list li::before {
+      color: #2563eb;
+    }
+
+    .comp-block.new .bullet-list li {
+      color: #111827;
+      font-weight: 600;
+    }
+
+    /* Pillars (The 4 things we set up) */
+    .pillar-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 32px;
+      padding: 24px 0;
+      border-bottom: 1px solid #f3f4f6;
+    }
+
+    .pillar-item:last-child {
+      border-bottom: none;
+      padding-bottom: 8px;
+    }
+
+    @media (max-width: 640px) {
+      .pillar-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+      }
+    }
+
+    .pillar-icon-box {
+      flex-shrink: 0;
+      width: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .pillar-icon-box img,
+    .pillar-icon-box svg {
+      max-width: 100px;
+      max-height: 100px;
+      object-fit: contain;
+    }
+
+    .pillar-content {
+      flex: 1;
+    }
+
+    .pillar-num-title {
+      font-size: 21px;
+      font-weight: 800;
+      color: #1d4ed8;
+      margin-bottom: 10px;
+    }
+
+    .pillar-text {
+      font-size: 16.5px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 12px;
+    }
+
+    .pillar-text:last-child {
+      margin-bottom: 0;
+    }
+
+    /* FAQ Section */
+    .faq-block {
+      margin-bottom: 24px;
+    }
+
+    .faq-block:last-child {
+      margin-bottom: 0;
+    }
+
+    .faq-q {
+      font-size: 20px;
+      font-weight: 800;
+      color: #1d4ed8;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .faq-a {
+      font-size: 17px;
+      color: var(--text-muted);
+      font-weight: 500;
+      line-height: 1.65;
+    }
+
+    /* Before Call / Final Offer Card */
+    .cta-card {
+      background: #ffffff;
+      border: 2px solid #2563eb;
+      border-radius: 16px;
+      padding: 44px 48px;
+      box-shadow: 0 10px 30px -4px rgba(37, 99, 235, 0.08);
+    }
+
+    @media (max-width: 640px) {
+      .cta-card {
+        padding: 28px 20px;
+      }
+    }
+
+    .offer-line {
+      font-size: 18px;
+      margin-bottom: 14px;
+      color: #111827;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .offer-line strong {
+      font-weight: 800;
+      font-size: 19px;
+      color: #000000;
+    }
+
+    .offer-line span {
+      color: #374151;
+      font-weight: 500;
+    }
+
+    .next-step-box {
+      margin-top: 28px;
+      padding: 20px 24px;
+      background: #eff6ff;
+      border-radius: 12px;
+      border: 1px solid #bfdbfe;
+    }
+
+    .next-step-box p {
+      font-size: 17.5px;
+      font-weight: 700;
+      color: #1e40af;
+      margin-bottom: 0;
+    }
+
+    .reply-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 18px;
+      background-color: #2563eb;
+      color: #ffffff;
+      font-size: 17px;
+      font-weight: 800;
+      padding: 14px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+    }
+
+    .reply-btn:hover {
+      background-color: #1d4ed8;
+      transform: translateY(-1px);
+    }
+
+    .case-study-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 6px;
+      padding: 6px 12px;
+      background-color: #f3f4f6;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #1f2937;
+    }
+  </style>
 </head>
-<body class="font-body-md text-body-md">
-<!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-outline-variant">
-<div class="flex justify-between items-center h-20 px-gutter max-w-[1120px] mx-auto">
-<div class="flex items-center gap-4">
-<span class="font-headline-sm text-headline-sm text-primary tracking-tight font-extrabold">Client Launch</span>
-</div>
-<nav class="hidden md:flex items-center gap-8"><a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors font-bold" href="#problem">Problem</a>
-<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors font-bold" href="#solution">Solution</a>
-<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors font-bold" href="#scope">Scope</a>
-<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors font-bold" href="#timeline-detailed">Timeline</a>
-<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors font-bold" href="#pricing-investment">Pricing</a></nav>
-<div class="flex items-center gap-4">
-<button onclick="window.print()" class="hidden sm:flex items-center gap-2 px-4 py-2 font-label-md text-label-md text-primary hover:bg-secondary-container transition-all font-bold cursor-pointer">
-<span class="material-symbols-outlined text-[20px]">download</span>
-                    Download PDF
-                </button>
-<button onclick="document.getElementById('agreement').scrollIntoView({behavior: 'smooth'})" class="bg-primary text-on-primary px-6 py-3 font-label-md text-label-md transition-opacity duration-150 active:opacity-80 font-bold shadow-lg shadow-black/10 cursor-pointer">
-                    Sign Proposal
-                </button>
-</div>
-</div>
-</header>
-<main class="pt-20">
-<!-- Cover Section -->
-<section class="min-h-[90vh] flex flex-col items-center justify-center px-gutter max-w-[1000px] mx-auto py-24 text-center">
-<div class="mb-12">
-<span class="bg-accent-gold text-white px-8 py-3 font-label-md text-lg md:text-xl font-extrabold inline-block tracking-widest shadow-sm">Client Launch</span>
-</div>
-<h1 class="font-display text-[48px] md:text-[64px] text-primary leading-[1.1] font-extrabold mb-8 max-w-[800px]">
-        Revenue Generation System for Client Launch
-    </h1>
-<p class="font-body-lg text-secondary max-w-[700px] mx-auto mb-20 font-medium">
-        This proposal contains all of the details &amp; costs regarding the scope of work, investment, and terms requested by [Name].
-    </p>
-<div class="w-full aspect-[16/9] bg-[#1a1a1a] overflow-hidden rounded shadow-2xl relative">
-<img alt="Professional aesthetic backdrop" class="w-full h-full object-cover mix-blend-overlay opacity-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnIK2HGa4CG1DlC7AQiwBrLqXDU_R1ydurP7yIfjRwswcLnEi71z3OEX_tuZhmMiryb_Js3J9Ib-XNh5p9wq7iirRCcyj1xaJ6jMBFNcHhU8JLeGPOtORJL9HfTiAb3NCrbi75jVYKfyGzTkjVuaGn6aLr1_hkdTMUSzfNBQfcuDGkyFkKOWpBSx_FlUeEmrE6L6FwjoqPsOpPrNcMN6H4NYYNjQwGOyhI5B6G1brEC4xP8e7IQRalNpIzu1B9jIo7aeeAbXA9k3ie"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-</div>
-</section>
-<!-- The Problem -->
-<section class="section-spacing" id="problem">
-<div class="px-gutter max-w-[1120px] mx-auto content-card p-12 md:p-20">
-<div class="grid md:grid-cols-3 gap-12 md:gap-24">
-<div class="md:col-span-1 relative">
-<div class="sticky top-32">
-<h2 class="font-headline-md text-headline-md text-primary font-extrabold mb-4">The Problem</h2>
-<div class="h-px w-20 bg-primary opacity-20"></div>
-</div>
-<div class="hidden md:block absolute -right-12 top-0 bottom-0 section-divider"></div>
-</div>
-<div class="md:col-span-2 flex flex-col gap-12">
-<div class="flex flex-col gap-6">
-<p class="font-body-lg text-body-lg text-primary leading-relaxed">
-        As we discussed on our call, <span class="bg-surface-container-high px-1.5 rounded">[Client First Name]</span>, <span class="bg-surface-container-high px-1.5 rounded">[Client Business Name]</span> has a lot going for it. You have a proven service, happy clients, and a real impact on the people you work with. The foundation is there.
-      </p>
-<p class="font-body-md text-body-md text-secondary leading-relaxed">
-        But there are a few things holding the business back from scaling to where you want it to be.
-      </p>
-</div>
-<div class="flex flex-col gap-12 mt-4">
-<!-- Point 1 -->
-<div class="flex flex-col gap-4">
-<div class="flex items-center">
-<span class="step-number">01</span>
-<h4 class="font-headline-sm text-headline-sm text-primary font-bold">Selling a service, not an outcome.</h4>
-</div>
-<p class="font-body-md text-secondary leading-relaxed pl-12">Right now, <span class="bg-surface-container-high px-1 rounded">[Client Business Name]</span> is priced per session or per package. So is every other <span class="bg-surface-container-high px-1 rounded">[niche]</span> in <span class="bg-surface-container-high px-1 rounded">[city]</span>. When the market sells the same way, the only thing left to compete on is price. The businesses making real money in this space sell the outcome instead. When you sell the outcome, you have more margin left over. This means you can scale faster by increasing your marketing spend. You also have more money left over to hire talent etc.</p>
-</div>
-<!-- Point 2 -->
-<div class="flex flex-col gap-4">
-<div class="flex items-center">
-<span class="step-number">02</span>
-<h4 class="font-headline-sm text-headline-sm text-primary font-bold">No real sales process.</h4>
-</div>
-<p class="font-body-md text-secondary leading-relaxed pl-12">
-          Leads come in, but there's no clear, structured path moving them from initial interest to a confident "yes." Without that path in place, even strong prospects lose momentum and go quiet.
-        </p>
-</div>
-<!-- Point 3 -->
-<div class="flex flex-col gap-4">
-<div class="flex items-center">
-<span class="step-number">03</span>
-<h4 class="font-headline-sm text-headline-sm text-primary font-bold">Lead flow is unpredictable.</h4>
-</div>
-<p class="font-body-md text-secondary leading-relaxed pl-12">
-          Referrals and word-of-mouth are valuable, but they're inconsistent. To scale predictably, you need a lead source you can switch on, scale up, and rely on month to month.
-        </p>
-</div>
-<!-- Point 4 -->
-<div class="flex flex-col gap-4">
-<div class="flex items-center">
-<span class="step-number">04</span>
-<h4 class="font-headline-sm text-headline-sm text-primary font-bold">Paid ads tend to bring the wrong leads.</h4>
-</div>
-<p class="font-body-md text-secondary leading-relaxed pl-12">
-          Most owners who try Meta ads end up with leads who can't afford the work. The leads aren't the problem. The system around them is.
-        </p>
-</div>
-<!-- Point 5 -->
-<div class="flex flex-col gap-4">
-<div class="flex items-center">
-<span class="step-number">05</span>
-<h4 class="font-headline-sm text-headline-sm text-primary font-bold">Growth is capped by your time.</h4>
-</div>
-<p class="font-body-md text-secondary leading-relaxed pl-12">
-          Every deal still runs through you. That means the business can only grow as fast as you personally can. Until that bottleneck is removed, scaling is going to feel like working harder rather than smarter.
-        </p>
-</div>
-</div>
-<div class="mt-8 p-10 bg-surface-container-low border-l-4 border-primary shadow-sm">
-<p class="font-body-lg text-primary font-medium">
-        "These aren't separate issues. They're connected, and they compound each other. You can't fix the lead flow without fixing the offer. That's why most agencies fail their clients. We solve all of them together."
-      </p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- The Solution -->
-<section class="section-spacing" id="solution">
-<div class="px-gutter max-w-[1120px] mx-auto content-card p-12 md:p-20">
-<div class="grid md:grid-cols-3 gap-12 md:gap-24">
-<div class="md:col-span-1 relative">
-<div class="sticky top-32">
-<h2 class="font-headline-md text-headline-md text-primary font-extrabold mb-4">The Solution</h2>
-<div class="h-px w-20 bg-primary opacity-20"></div>
-</div>
-<div class="hidden md:block absolute -right-12 top-0 bottom-0 section-divider"></div>
-</div>
-<div class="md:col-span-2 flex flex-col gap-12">
-<div class="flex flex-col gap-6">
-<p class="font-body-lg text-body-lg text-primary leading-relaxed">
-        I build done-for-you client acquisition systems. I design the offer, run the ads, qualify the leads, and close the deals.
-      </p>
-<h3 class="font-headline-sm text-headline-sm text-primary font-bold mt-4 flex items-center gap-3">
-<span class="w-10 h-px bg-primary"></span>
-        Here's how it works.
-      </h3>
-</div>
-<div class="flex flex-col gap-12 mt-4">
-<!-- Point 1 -->
-<div class="flex flex-col gap-4">
-<div class="flex items-center">
-<span class="step-number bg-accent-gold">01</span>
-<h4 class="font-headline-sm text-headline-sm text-primary font-bold">Offer Creation</h4>
-</div>
-<p class="font-body-md text-secondary leading-relaxed pl-12">
-          This is the foundation. Before we spend a penny on ads, I build your offer with you. We repackage your service around the transformation your client actually wants. This alone changes the kind of buyer you attract.
-        </p>
-</div>
-<!-- Point 2 -->
-<div class="flex flex-col gap-4">
-<div class="flex items-center">
-<span class="step-number bg-accent-gold">02</span>
-<h4 class="font-headline-sm text-headline-sm text-primary font-bold">Tracking &amp; Tech Foundation</h4>
-</div>
-<p class="font-body-md text-secondary leading-relaxed pl-12">
-          A properly configured ad account, integrated calendar, and automated lead notifications. I set everything up so it runs cleanly from day one.
-        </p>
-</div>
-<!-- Point 3 -->
-<div class="flex flex-col gap-4">
-<div class="flex items-center">
-<span class="step-number bg-accent-gold">03</span>
-<h4 class="font-headline-sm text-headline-sm text-primary font-bold">Ad Creation &amp; Campaign Launch</h4>
-</div>
-<p class="font-body-md text-secondary leading-relaxed pl-12">
-          I write the scripts, edit the footage for Meta, build the landing pages, and launch. I then manage the campaigns daily, scaling what works.
-        </p>
-</div>
-<!-- Point 4 -->
-<div class="flex flex-col gap-4">
-<div class="flex items-center">
-<span class="step-number bg-accent-gold">04</span>
-<h4 class="font-headline-sm text-headline-sm text-primary font-bold">Lead Working &amp; Qualification</h4>
-</div>
-<p class="font-body-md text-secondary leading-relaxed pl-12">
-          The system contacts every new lead within minutes. Leads that are a fit get booked onto the sales calendar, reminded, and sent prep materials.
-        </p>
-</div>
-<!-- Point 5 -->
-<div class="flex flex-col gap-4">
-<div class="flex items-center">
-<span class="step-number bg-accent-gold">05</span>
-<h4 class="font-headline-sm text-headline-sm text-primary font-bold">Sales Call Closing</h4>
-</div>
-<p class="font-body-md text-secondary leading-relaxed pl-12">
-          I personally take every qualified sales call. You don't get involved until the new client has signed and paid.
-        </p>
-</div>
-</div>
-<div class="mt-8 border-t border-outline-variant pt-8">
-<p class="font-body-lg text-primary italic font-medium leading-relaxed">
-        The result is a steady, predictable pipeline of clients buying an offer you love delivering, without you lifting a finger on the acquisition side.
-      </p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Scope of Work -->
-<section class="section-spacing" id="scope">
-<div class="px-gutter max-w-[1120px] mx-auto content-card p-12 md:p-20">
-<div class="grid md:grid-cols-3 gap-12 md:gap-24">
-<div class="md:col-span-1 relative">
-<div class="sticky top-32">
-<h2 class="font-headline-md text-headline-md text-primary font-extrabold mb-4">Scope of Work</h2>
-<div class="h-px w-20 bg-primary opacity-20"></div>
-</div>
-<div class="hidden md:block absolute -right-12 top-0 bottom-0 section-divider"></div>
-</div>
-<div class="md:col-span-2 flex flex-col gap-10">
-<div class="flex flex-col gap-6">
-<p class="font-body-lg text-body-lg text-primary">To be fully transparent, here's everything I deliver during the engagement.</p>
-</div>
-<div class="flex flex-col gap-6">
-<div class="flex items-start gap-4 p-6 bg-surface-container-low border border-outline-variant/30 rounded-lg">
-<span class="material-symbols-outlined text-accent-gold text-2xl shrink-0">check_circle</span>
-<p class="font-body-lg text-secondary leading-relaxed pt-0.5">Research your market and competitors, build your core offer, set your price point, and write the sales script used on every call</p>
-</div>
-<div class="flex items-start gap-4 p-6 bg-surface-container-low border border-outline-variant/30 rounded-lg">
-<span class="material-symbols-outlined text-accent-gold text-2xl shrink-0">check_circle</span>
-<p class="font-body-lg text-secondary leading-relaxed pt-0.5">Set up all required tech — including your ad account, booking calendar, lead phone number, and automated SMS and email follow-up sequences</p>
-</div>
-<div class="flex items-start gap-4 p-6 bg-surface-container-low border border-outline-variant/30 rounded-lg">
-<span class="material-symbols-outlined text-accent-gold text-2xl shrink-0">check_circle</span>
-<p class="font-body-lg text-secondary leading-relaxed pt-0.5">Write all ad copy and produce all creative assets, including the landing page and thank-you page</p>
-</div>
-<div class="flex items-start gap-4 p-6 bg-surface-container-low border border-outline-variant/30 rounded-lg">
-<span class="material-symbols-outlined text-accent-gold text-2xl shrink-0">check_circle</span>
-<p class="font-body-lg text-secondary leading-relaxed pt-0.5">Build, launch, and manage your Facebook ad campaigns on a daily basis — monitoring performance, cutting underperforming ads, scaling winners, and refreshing creative as needed</p>
-</div>
-<div class="flex items-start gap-4 p-6 bg-surface-container-low border border-outline-variant/30 rounded-lg">
-<span class="material-symbols-outlined text-accent-gold text-2xl shrink-0">check_circle</span>
-<p class="font-body-lg text-secondary leading-relaxed pt-0.5">Contact every new lead within seconds of opt-in via call and email — and follow up persistently until a response is received</p>
-</div>
-<div class="flex items-start gap-4 p-6 bg-surface-container-low border border-outline-variant/30 rounded-lg">
-<span class="material-symbols-outlined text-accent-gold text-2xl shrink-0">check_circle</span>
-<p class="font-body-lg text-secondary leading-relaxed pt-0.5">Qualify every lead against agreed criteria and book only suitable prospects onto the sales calendar, with confirmations and reminders sent automatically</p>
-</div>
-<div class="flex items-start gap-4 p-6 bg-surface-container-low border border-outline-variant/30 rounded-lg">
-<span class="material-symbols-outlined text-accent-gold text-2xl shrink-0">check_circle</span>
-<p class="font-body-lg text-secondary leading-relaxed pt-0.5">Conduct every sales call — presenting the offer, handling objections, closing the deal, and collecting payment before handing the new customer over for fulfilment</p>
-</div>
-<div class="flex items-start gap-4 p-6 bg-surface-container-low border border-outline-variant/30 rounded-lg">
-<span class="material-symbols-outlined text-accent-gold text-2xl shrink-0">check_circle</span>
-<p class="font-body-lg text-secondary leading-relaxed pt-0.5">Track all closed revenue and provide regular performance reports with a standing review via loom</p>
-</div>
-</div>
-<div class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-8">
-<div class="p-8 bg-surface-container-low border border-outline-variant/30">
-<h4 class="font-label-md text-label-md uppercase tracking-widest text-primary mb-4 font-extrabold">What You Keep</h4>
-<p class="font-body-md text-secondary leading-relaxed">Your fully built offer, all winning ad creatives, your ad account with pixel data, and all landing pages produced.</p>
-</div>
-<div class="p-8 bg-surface-container-low border border-outline-variant/30">
-<h4 class="font-label-md text-label-md uppercase tracking-widest text-primary mb-4 font-extrabold">What I Retain</h4>
-<p class="font-body-md text-secondary leading-relaxed">Proprietary internal systems, custom AI automation scripts, and internal workflow infrastructure.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Timeline -->
-<section class="section-spacing" id="timeline-detailed">
-<div class="px-gutter max-w-[1120px] mx-auto content-card p-12 md:p-20">
-<div class="grid md:grid-cols-3 gap-12 md:gap-24">
-<div class="md:col-span-1 relative">
-<div class="sticky top-32">
-<h2 class="font-headline-md text-headline-md text-primary font-extrabold mb-4">Timeline</h2>
-<div class="h-px w-20 bg-primary opacity-20"></div>
-</div>
-<div class="hidden md:block absolute -right-12 top-0 bottom-0 section-divider"></div>
-</div>
-<div class="md:col-span-2 flex flex-col gap-12">
-<div class="flex flex-col gap-6">
-<p class="font-body-lg text-body-lg text-primary">This is a 3-month engagement starting from the date of signing.</p>
-</div>
-<div class="flex flex-col gap-12">
-<!-- Week 1 -->
-<div class="flex flex-col gap-3 relative pl-8 border-l-2 border-primary/10">
-<div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary"></div>
-<h4 class="font-headline-sm text-headline-sm text-primary font-bold">Week 1: Foundation</h4>
-<p class="font-body-md text-secondary leading-relaxed">
-          The heaviest week. Offer creation, technical setup, creative direction, and qualification system build.
-        </p>
-</div>
-<!-- Week 2 -->
-<div class="flex flex-col gap-3 relative pl-8 border-l-2 border-primary/10">
-<div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary/40"></div>
-<h4 class="font-headline-sm text-headline-sm text-primary font-bold">Week 2: Launch</h4>
-<p class="font-body-md text-secondary leading-relaxed">
-          Campaigns go live. The first leads start coming in. The sales call calendar opens.
-        </p>
-</div>
-<!-- Weeks 3-4 -->
-<div class="flex flex-col gap-3 relative pl-8 border-l-2 border-primary/10">
-<div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary/20"></div>
-<h4 class="font-headline-sm text-headline-sm text-primary font-bold">Weeks 3–4: First Closes</h4>
-<p class="font-body-md text-secondary leading-relaxed">
-          The first sales calls are taken and closed. Early data informs our first round of improvements.
-        </p>
-</div>
-<!-- Months 2-3 -->
-<div class="flex flex-col gap-3 relative pl-8 border-l-2 border-primary/10">
-<div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-accent-gold"></div>
-<h4 class="font-headline-sm text-headline-sm text-primary font-bold">Months 2–3: Scale</h4>
-<p class="font-body-md text-secondary leading-relaxed">
-          We double down on winning ads. We expand the budget where ROI supports it. Peak performance phase.
-        </p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Pricing -->
-<section class="section-spacing" id="pricing-investment">
-<div class="px-gutter max-w-[1120px] mx-auto content-card p-12 md:p-20 bg-primary text-on-primary">
-<div class="grid md:grid-cols-3 gap-12 md:gap-24">
-<div class="md:col-span-1 relative">
-<div class="sticky top-32">
-<h2 class="font-headline-md text-headline-md text-on-primary font-extrabold mb-4">Pricing &amp; Investment</h2>
-<div class="h-px w-20 bg-on-primary opacity-30"></div>
-</div>
-<div class="hidden md:block absolute -right-12 top-0 bottom-0 section-divider opacity-20"></div>
-</div>
-<div class="md:col-span-2 flex flex-col gap-10">
-<div class="flex flex-col gap-6">
-<p class="font-body-lg text-body-lg text-on-primary/90">This engagement is structured so the risk sits with me, not you.</p>
-</div>
-<div class="flex flex-col gap-10">
-<div class="flex flex-col gap-3 p-8 border border-on-primary/10 rounded">
-<h4 class="font-headline-sm text-headline-sm text-on-primary font-bold">Setup Fee: £500 (one-time)</h4>
-<p class="font-body-md text-on-primary/70 leading-relaxed">Covers the full build. Strategy, creative direction, landing pages, CRM, and campaign launch.</p>
-</div>
-<div class="flex flex-col gap-3 p-8 border-2 border-accent-gold rounded">
-<h4 class="font-headline-sm text-headline-sm text-on-primary font-bold">Performance Fee: 10% of revenue</h4>
-<p class="font-body-md text-on-primary/70 leading-relaxed">My fee is 10% of the contract value for closed deals. If no deals close, no performance fee is paid. We are aligned.</p>
-</div>
-<div class="flex flex-col gap-3 p-8 border border-on-primary/10 rounded">
-<h4 class="font-headline-sm text-headline-sm text-on-primary font-bold">Ad Spend: Direct to Meta</h4>
-<p class="font-body-md text-on-primary/70 leading-relaxed">Paid directly by you. I recommend a minimum starting budget of £1,000 per month for data optimization.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Case Studies -->
-<section class="section-spacing" id="case-studies">
-<div class="px-gutter max-w-[1120px] mx-auto content-card p-12 md:p-20">
-<div class="grid md:grid-cols-3 gap-12 md:gap-24">
-<div class="md:col-span-1 relative">
-<div class="sticky top-32">
-<h2 class="font-headline-md text-headline-md text-primary font-extrabold mb-4">Case Studies</h2>
-<div class="h-px w-20 bg-primary opacity-20"></div>
-</div>
-<div class="hidden md:block absolute -right-12 top-0 bottom-0 section-divider"></div>
-</div>
-<div class="md:col-span-2 flex flex-col gap-12">
-<div class="grid gap-12"><div class="flex flex-col gap-4">
-<h4 class="font-headline-sm text-headline-sm text-primary font-bold capitalize">Generated Seven Figures In Revenue For A Client Within 20 Weeks.</h4>
-<div class="h-1 w-24 bg-accent-gold"></div>
-</div>
-<div class="flex flex-col gap-4">
-<h4 class="font-headline-sm text-headline-sm text-primary font-bold capitalize">Booked A Health And Wellness Business Months In Advance.</h4>
-<div class="h-1 w-24 bg-accent-gold"></div>
-</div>
-<div class="flex flex-col gap-4">
-<h4 class="font-headline-sm text-headline-sm text-primary font-bold capitalize">Closed Multiple 20k Deals Within 30 Minutes.</h4>
-<div class="h-1 w-24 bg-accent-gold"></div>
-</div></div>
-</div>
-</div>
-</div>
-</section>
-<!-- Agreement -->
-<section class="section-spacing" id="agreement">
-<div class="px-gutter max-w-[1120px] mx-auto content-card p-12 md:p-20">
-<div class="grid md:grid-cols-3 gap-12 md:gap-24">
-<div class="md:col-span-1 relative">
-<div class="sticky top-32">
-<h2 class="font-headline-md text-headline-md text-primary font-extrabold mb-4">Agreement</h2>
-<div class="h-px w-20 bg-primary opacity-20"></div>
-</div>
-<div class="hidden md:block absolute -right-12 top-0 bottom-0 section-divider"></div>
-</div>
-<div class="md:col-span-2 flex flex-col gap-10">
-<div class="flex flex-col gap-4">
-<p class="font-body-md text-primary font-semibold">This Agreement is entered into on [Date] between [Client Business Name] ("Client") and [Your Name / Your Business] ("Service Provider").</p>
-</div>
-<div class="flex flex-col gap-8 text-secondary max-h-[400px] overflow-y-auto pr-6 custom-scrollbar">
-<div class="flex flex-col gap-2">
-<h4 class="font-label-md text-primary font-extrabold">1. Services</h4>
-<p class="font-body-md">Service Provider will deliver the services outlined in the Scope of Work for an initial term of three (3) months.</p>
-</div>
-<div class="flex flex-col gap-2">
-<h4 class="font-label-md text-primary font-extrabold">2. Fees</h4>
-<p class="font-body-md">Client agrees to pay a setup fee of £500 upon signing and a performance fee of 10% of revenue acquisition within 7 days of each closed deal.</p>
-</div>
-<div class="flex flex-col gap-2">
-<h4 class="font-label-md text-primary font-extrabold">3. Ad Spend</h4>
-<p class="font-body-md">Paid directly to Meta. Recommended minimum of £1,000/month.</p>
-</div>
-<div class="flex flex-col gap-2">
-<h4 class="font-label-md text-primary font-extrabold">4. Intellectual Property</h4>
-<p class="font-body-md">Creative assets and data produced are owned by Client. Backend systems and prompts remain the property of Service Provider.</p>
-</div>
-<div class="flex flex-col gap-2">
-<h4 class="font-label-md text-primary font-extrabold">5. Termination</h4>
-<p class="font-body-md">Either party may terminate with 14 days' written notice. Setup fee is non-refundable.</p>
-</div>
-</div>
-<!-- Signature Block -->
-<div class="mt-16 pt-16 border-t border-outline-variant">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
-<div class="flex flex-col gap-8">
-<div class="border-b-2 border-primary/10 pb-4 flex flex-col gap-2">
-<p class="font-label-md text-primary font-extrabold uppercase tracking-widest text-xs opacity-50">Client Signature</p>
-<div class="h-20" contenteditable="true" title="Click to type signature" style="outline: none; border-radius: 4px; padding: 4px; transition: background 0.2s;" onfocus="this.style.backgroundColor='#f0f3ff'" onblur="this.style.backgroundColor='transparent'" onmouseover="this.style.backgroundColor='#f9f9ff'" onmouseout="if(document.activeElement !== this) this.style.backgroundColor='transparent'"></div>
-</div>
-<div class="flex flex-col gap-1">
-<p class="font-body-md text-primary font-bold" contenteditable="true" style="outline: none; transition: background 0.2s;" onfocus="this.style.backgroundColor='#f0f3ff'" onblur="this.style.backgroundColor='transparent'" title="Click to edit name">[Client Business Name]</p>
-<p class="font-label-sm text-secondary" contenteditable="true" style="outline: none; transition: background 0.2s;" onfocus="this.style.backgroundColor='#f0f3ff'" onblur="this.style.backgroundColor='transparent'" title="Click to edit date">Date: ____________</p>
-</div>
-</div>
-<div class="flex flex-col gap-8">
-<div class="border-b-2 border-primary/10 pb-4 flex flex-col gap-2">
-<p class="font-label-md text-primary font-extrabold uppercase tracking-widest text-xs opacity-50">Service Provider Signature</p>
-<div class="h-20" contenteditable="true" title="Click to type signature" style="outline: none; border-radius: 4px; padding: 4px; transition: background 0.2s;" onfocus="this.style.backgroundColor='#f0f3ff'" onblur="this.style.backgroundColor='transparent'" onmouseover="this.style.backgroundColor='#f9f9ff'" onmouseout="if(document.activeElement !== this) this.style.backgroundColor='transparent'"></div>
-</div>
-<div class="flex flex-col gap-1">
-<p class="font-body-md text-primary font-bold" contenteditable="true" style="outline: none; transition: background 0.2s;" onfocus="this.style.backgroundColor='#f0f3ff'" onblur="this.style.backgroundColor='transparent'" title="Click to edit name">Client Launch</p>
-<p class="font-label-sm text-secondary" contenteditable="true" style="outline: none; transition: background 0.2s;" onfocus="this.style.backgroundColor='#f0f3ff'" onblur="this.style.backgroundColor='transparent'" title="Click to edit date">Date: ____________</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<footer class="py-20 text-center text-secondary font-label-md tracking-widest uppercase opacity-40">
-    © Client Launch
-</footer>
-<script>
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 100,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
+<body>
 
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.classList.add('shadow-lg', 'shadow-black/[0.03]');
-            } else {
-                header.classList.remove('shadow-lg', 'shadow-black/[0.03]');
-            }
-        });
-    </script>
-</body></html>
+  <div class="container">
+
+    <!-- Card 1: Main Title & Hook & Video -->
+    <section class="gamma-card">
+      <h1>How Our System Pays For Itself & Makes You Extra Profit In 30 Days Or You Don't Pay.</h1>
+      <div class="title-accent-line"></div>
+
+      <p>In the next 4 minutes, I'll show you how our system pays for itself in 30 days &amp; makes you extra profit or you don't pay.</p>
+
+      <p>So that you don't lose jobs to competitors because you miss calls when you're busy, sit too low on Google Maps so customers can't find you, or have an outdated website that makes people click off and choose someone else—costing you thousands of pounds in easy work every month.</p>
+
+      <!-- Video Player -->
+      <div class="video-container">
+        <iframe 
+          src="https://www.youtube.com/embed/bzCycqQXkdg?rel=0" 
+          title="How Our System Pays For Itself & Makes You Extra Profit" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <p>We fixed these exact leaks for <strong>Upgrade &amp; Save</strong>—helping generate 5 figures in revenue within 60 days. (8 jobs booked).</p>
+
+      <div class="case-study-tag">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+        <span>Upgrade &amp; Save LTD — Verified Client Case Study</span>
+      </div>
+
+      <p style="margin-top: 24px; margin-bottom: 0;">Today, I'm going to walk you through the four things we set up for your business to catch those missed jobs without spending a penny on ads.</p>
+    </section>
+
+    <!-- Card 2: Traditional Agency vs The New Way -->
+    <section class="gamma-card">
+      <h2>Why traditional agencies don't work for local service businesses</h2>
+
+      <div class="comparison-grid">
+        <div class="comp-block old">
+          <h3>Traditional agency</h3>
+          <ul class="bullet-list">
+            <li>Charge £2,000–£5,000 upfront for a website + £1,000+/month retainers</li>
+            <li>Lock you into 3–12 month contracts with zero guarantee</li>
+            <li>Force you to pay for expensive ads before fixing the basics</li>
+            <li>Send confusing reports about "clicks" instead of actual booked jobs</li>
+          </ul>
+        </div>
+
+        <div class="comp-block new">
+          <h3>The New Way (Our System):</h3>
+          <ul class="bullet-list">
+            <li>£0 upfront website build &amp; £0 ad spend required</li>
+            <li>Month-to-month—no long-term contracts</li>
+            <li>1/10 of what they charge &amp; it actually books you more jobs and make you money</li>
+            <li><strong>30-Day Guarantee:</strong> Pays for itself and makes you extra profit, or you don't pay</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card 3: How It Works (The 4 Things We Set Up For You) -->
+    <section class="gamma-card">
+      <h2>How It Works<br><span style="font-weight: 700; color: #4b5563; font-size: 0.85em;">(The 4 Things We Set Up For You)</span></h2>
+      <div class="title-accent-line"></div>
+
+      <!-- Pillar 1 -->
+      <div class="pillar-item">
+        <div class="pillar-icon-box">
+          <svg width="68" height="68" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="5" y="2" width="14" height="20" rx="3" ry="3"></rect>
+            <line x1="12" y1="18" x2="12" y2="18.01"></line>
+            <path d="M8 6h8"></path>
+          </svg>
+        </div>
+        <div class="pillar-content">
+          <div class="pillar-num-title">1 : Automated Missed Call Texting</div>
+          <p class="pillar-text">When you miss a call, that customer usually hangs up and immediately calls your competitor. Our system stops that from happening.</p>
+          <p class="pillar-text">The second you miss their call, it instantly texts them back on your behalf. Instead of calling the next guy on Google, they reply to you—and you lock in the job without ever dropping your tools.</p>
+        </div>
+      </div>
+
+      <!-- Pillar 2 -->
+      <div class="pillar-item">
+        <div class="pillar-icon-box">
+          <svg width="68" height="68" viewBox="0 0 24 24" fill="none" stroke="#ea4335" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"></path>
+            <circle cx="12" cy="9" r="2.5" fill="#ea4335"></circle>
+          </svg>
+        </div>
+        <div class="pillar-content">
+          <div class="pillar-num-title">2 : Top Position On Google Maps</div>
+          <p class="pillar-text">We automatically ask your happy past &amp; new customers to leave good reviews. But getting the review is only half the job. Our system also replies to every single one on your behalf. We intentionally use specific search words in those replies that Google loves.</p>
+          <p class="pillar-text">This constantly pushes your business to the top of the map. It creates a massive flywheel effect: more reviews push you higher up, being higher gets you more jobs, and more jobs gets you even more reviews.</p>
+        </div>
+      </div>
+
+      <!-- Pillar 3 -->
+      <div class="pillar-item">
+        <div class="pillar-icon-box">
+          <svg width="68" height="68" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+            <line x1="8" y1="21" x2="16" y2="21"></line>
+            <line x1="12" y1="17" x2="12" y2="21"></line>
+          </svg>
+        </div>
+        <div class="pillar-content">
+          <div class="pillar-num-title">3 : High Performance Website (optional)</div>
+          <p class="pillar-text">Most local business websites either look outdated or don't work properly on a mobile phone. When a customer clicks on a slow, confusing site, they click straight back off and ring someone else.</p>
+          <p class="pillar-text">If you need one, we'll build you a clean, fast website designed to turn phone visitors into actual calls—with £0 upfront build fee. And if you already have a website you're happy with, we simply plug our system straight into it.</p>
+        </div>
+      </div>
+
+      <!-- Pillar 4 -->
+      <div class="pillar-item">
+        <div class="pillar-icon-box">
+          <svg width="68" height="68" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+        </div>
+        <div class="pillar-content">
+          <div class="pillar-num-title">4 : Automated Referral Engine</div>
+          <p class="pillar-text">Most business owners sit on a goldmine of old customers who already know and trust their work, yet never reach back out to them. Instead, they end up stressing through quiet weeks waiting for the phone to ring.</p>
+          <p class="pillar-text">Whenever you want extra work, we send a simple, friendly check-in text out to your past customers on your behalf. Because they already trust you, it brings in easy repeat jobs and referrals without spending a penny on ads.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card 4: Frequently Asked Questions -->
+    <section class="gamma-card">
+      <h2>Frequently Asked Questions</h2>
+      <div class="title-accent-line"></div>
+
+      <!-- FAQ 1 -->
+      <div class="faq-block">
+        <div class="faq-q">"I've tried marketing agencies in the past and it didn't work out"</div>
+        <p class="faq-a">First, if you've tried marketing agencies in the past and felt burned, I hear that every day. They try selling expensive ads before fixing the basics.</p>
+        <p class="faq-a">We aren't an ad agency, and there are no contracts. It's just a simple automated system that catches the jobs you're already missing—bringing most clients 6 to 15 extra jobs a month without spending a penny on ads.</p>
+      </div>
+
+      <hr style="border: 0; border-top: 1px solid #f3f4f6; margin: 24px 0;">
+
+      <!-- FAQ 2 -->
+      <div class="faq-block">
+        <div class="faq-q">"I get all my work from word of mouth"</div>
+        <p class="faq-a">Second, if you get most of your work from word of mouth, that's great—it means people trust you.</p>
+        <p class="faq-a">The only problem is you can't turn it on like a tap, so it's always feast or famine—and you're still missing out on all the people searching Google Maps who don't have a mate to ask. Our system keeps your word-of-mouth business running while bringing in steady Google and repeat jobs during the quiet weeks.</p>
+      </div>
+
+      <hr style="border: 0; border-top: 1px solid #f3f4f6; margin: 24px 0;">
+
+      <!-- FAQ 3 -->
+      <div class="faq-block">
+        <div class="faq-q">"I already have a website"</div>
+        <p class="faq-a">Third, if you already have a website, brilliant—you don't need to touch it.</p>
+        <p class="faq-a">Most websites just sit there like an online brochure and don't actually catch missed calls or get you Google reviews. We simply plug our automation straight into your existing site so it starts converting the visitors you're already getting.</p>
+      </div>
+
+      <hr style="border: 0; border-top: 1px solid #f3f4f6; margin: 24px 0;">
+
+      <!-- FAQ 4 -->
+      <div class="faq-block">
+        <div class="faq-q">"I'm not very good with technology"</div>
+        <p class="faq-a">If you're not good with technology, don't worry—we set up and run everything for you.</p>
+      </div>
+
+      <hr style="border: 0; border-top: 1px solid #f3f4f6; margin: 24px 0;">
+
+      <!-- FAQ 5 -->
+      <div class="faq-block">
+        <div class="faq-q">"Three hundred pounds is a lot of money"</div>
+        <p class="faq-a">If you're thinking £300 is a lot of money, I completely get it—especially if you've wasted money on marketing before.</p>
+        <p class="faq-a">The way to look at it is this: for most trades, one single extra job pays for the entire month—and our system is built to bring you 8 to 15+ of them. Plus, with our 30-day guarantee, if it doesn't pay for itself and make you extra profit, you don't pay anyway.</p>
+      </div>
+    </section>
+
+    <!-- Card 5: Before our call / Close -->
+    <section class="cta-card">
+      <h2>Before our call</h2>
+      <div class="title-accent-line"></div>
+
+      <div class="offer-line">
+        <strong>What You Get:</strong>
+        <span>Full automated leak-plugging system + £0 upfront website (if needed)</span>
+      </div>
+
+      <div class="offer-line" style="margin-top: 16px;">
+        <strong>Investment:</strong>
+        <span>£300/month (No long-term contracts, £0 ad spend)</span>
+      </div>
+
+      <div class="offer-line" style="margin-top: 16px;">
+        <strong>30-Day Guarantee:</strong>
+        <span>Pays for itself and makes you extra profit, or you don't pay</span>
+      </div>
+
+      <div class="next-step-box">
+        <p>Next Step: Reply to my message with how many calls a week you roughly miss</p>
+        <a href="https://wa.me/447471752067?text=Hi%20Muhseen,%20I%20watched%20the%20video.%20We%20roughly%20miss..." class="reply-btn" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          Reply on WhatsApp
+        </a>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
