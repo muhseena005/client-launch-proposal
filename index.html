@@ -116,21 +116,30 @@
       }
     }
 
-    /* Main Headline: Exactly like Gamma */
+    /* Main Headline */
     h1 {
       font-size: clamp(38px, 5.2vw, 56px);
       font-weight: 800;
-      line-height: 1.22;
+      line-height: 1.25;
       letter-spacing: -0.02em;
       color: #000000;
       margin-bottom: 24px;
     }
 
-    .gamma-underline {
+    .headline-underline {
       text-decoration: underline;
-      text-decoration-thickness: 3px;
+      text-decoration-thickness: 3.5px;
       text-underline-offset: 6px;
       color: #000000;
+    }
+
+    .headline-highlight {
+      display: inline-block;
+      background: linear-gradient(120deg, rgba(254, 240, 138, 0.95) 0%, rgba(253, 224, 71, 0.95) 100%);
+      padding: 0 8px;
+      border-radius: 4px;
+      color: #000000;
+      box-shadow: 0 2px 8px rgba(234, 179, 8, 0.2);
     }
 
     .title-accent-line {
@@ -427,7 +436,7 @@
 
     <!-- Card 1: Main Title & Hook -->
     <section class="gamma-card">
-      <h1>How Our System Pays For Itself &amp; Makes You Extra Profit In 30 Days <span class="gamma-underline">Or You Don't Pay</span>.</h1>
+      <h1>How Our System Pays For Itself &amp; Makes You <span class="headline-underline">Extra Profit In 30 Days</span> <span class="headline-highlight">Or You Don't Pay</span>.</h1>
 
       <p>In the next 4 minutes, I'll show you how our system pays for itself in 30 days &amp; makes you extra profit or you don't pay.</p>
 
